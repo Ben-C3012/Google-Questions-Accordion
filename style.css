@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+   font-family: open-sa;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+span {
+    font-family: serif;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+.card {
+    border: 1px solid grey;
+    width: 740px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+
+.card-header {
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: .5rem;
+    cursor: pointer;
+    font-family: 'sans-serif';
+   
+    
+ 
+ 
+    
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 25px;
+}
+
+.card-body p  {
+  margin-top: 5px;
+  padding: 1.3rem;
+  font-family:  sans-serif;
+  
+}
+
+
+.card-body {
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.4s;
+}
+
+
+.card-body.active{
+  max-height: 100px;
+}
+
+
+
+.card-body::before {
+    content: '';
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+i {
+    font-size: 1.4rem;
+    transition: transform .45s;
+}
+
+i.active {
+    transform: rotate(180deg);
+}
+
+.second {
+    border-top: 1px solid grey;
+}
