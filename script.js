@@ -5,16 +5,9 @@ let cardHeaders = document.querySelectorAll('.card-header')
 const icons = document.querySelectorAll('i')
 const cards = document.querySelectorAll('.card')
 
-
-
-
-console.log(cards);
-
-
 cards[0].addEventListener('click', (e) => {
         cardBodys[0].classList.toggle('active')
         icons[0].classList.toggle('active')
-  
   })
 
   
@@ -29,27 +22,5 @@ cards[2].addEventListener('click', (e) => {
   icons[2].classList.toggle('active')
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
